@@ -1,0 +1,9 @@
+n = int(input("Digite um número: "))
+a, b = 0, 1
+while b <= n:
+    if b == n:
+        print('{} pertence à sequência de Fibonacci.'.format(n))
+        break
+    a, b = b, a + b
+else:
+    print('{} não pertence à sequência de Fibonacci.'.format(n))
